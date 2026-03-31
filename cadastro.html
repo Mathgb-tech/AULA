@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pacientes - Supabase</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <h1>Cadastro de Pacientes</h1>
+    <form>
+        <div>
+            <label for="idNome">Nome</label>
+            <input type="text" id="idNome" placeholder="Digite o nome completo" required>
+        </div>
+        <div>
+            <label for="idTelefone">Telefone</label>
+            <input type="tel" id="idTelefone" placeholder="(00) 00000-0000" required>
+        </div>
+        <div>
+            <label for="idEmail">Email</label>
+            <input type="email" id="idEmail" placeholder="email@exemplo.com" required>
+        </div>
+        <button type="submit">Cadastrar Paciente</button>
+    </form>
+    <p id="message" class="message"></p>
+
+    <script type="module" src="./supabase.js"></script>
+</body>
+</html>
